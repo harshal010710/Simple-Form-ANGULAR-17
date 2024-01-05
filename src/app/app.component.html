@@ -1,0 +1,34 @@
+<form #formss="ngForm" (ngSubmit)="getData(formss.value)">
+
+  <input name="user" ngModel type="text" placeholder="enter username">
+
+  <br />
+  <br />
+  
+  <input name="password" ngModel type="text" placeholder="Enter Password">
+
+  <br />
+  <br />
+
+  <input name="email" ngModel type="text" placeholder="enter email">
+
+  <br>
+  <br>
+
+  <button>submit</button>
+</form>
+
+<ul>
+  <li>
+    {{userData.user}}
+  </li>
+  <li>
+    {{userData.password}}
+  </li>
+
+  <li>
+    {{userData.email}}
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
